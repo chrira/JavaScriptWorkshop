@@ -67,7 +67,7 @@ http://www.jboss.org/jbossas/downloads/
 To reduce the network traffic during the course the following steps should be executed before the workshop:
 
 Check out the following git repository:  
-`git clone --recursive https://github.com/jbandi/JavaScriptWorkshop.git`
+`git clone --recursive https://github.com/chrira/JavaScriptWorkshop.git`
 
 From within the cloned repository execute the following commands:
 ```
