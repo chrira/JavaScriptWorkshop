@@ -37,16 +37,16 @@ describe('ToDo List', function(){
         expect(todoList.eq(0).text()).toBe('First ToDo');
     });
 
-//    it('should add item when clicking button', function() {
-//        var input = $('input');
-//        input.val('First ToDo');
-//
-//        var addBtn = $('#addBtn');
-//        addBtn.trigger('click'); // in order for this to work the click handler has to be registered through jQuery
-//
-//        var itemCount = $('#do h3').length;
-//        expect(itemCount).toBe(1);
-//    });
+    it('should add item when clicking button', function() {
+        var input = $('input');
+        input.val('First ToDo');
+
+        var addBtn = $('#addBtn');
+        addBtn.trigger('click'); // in order for this to work the click handler has to be registered through jQuery
+
+        var itemCount = $('#do h3').length;
+        expect(itemCount).toBe(1);
+    });
 });
 
 

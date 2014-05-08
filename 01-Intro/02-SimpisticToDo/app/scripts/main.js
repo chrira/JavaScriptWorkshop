@@ -9,8 +9,13 @@ window.onload = function(){
 function registerButtonHandler(){
     'use strict';
     console.log('Registering handler ...');
-    var addBtn = document.getElementById('addBtn');
-    addBtn.addEventListener('click', addText);
+    $('addBtn').on('click', addText);
+
+    // addEventListener geht nicht für IE -> attachEvent für IE !!
+    // var addBtn = document.getElementById('addBtn');
+    // addBtn.addEventListener('click', addText);
+
+    // use jQuery!
 }
 
 function addText(){
