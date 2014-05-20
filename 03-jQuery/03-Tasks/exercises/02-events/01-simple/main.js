@@ -1,14 +1,14 @@
 (function (global) {
 	// task: select the left (class=trigger) and right image (class=target) 
-	var trigger = $("REPLACE_ME"),
-		target = $("REPLACE_ME");
+	var trigger = $(".trigger"),
+		target = $(".target");
 	
 	
 	// task-1: register mouseover event to trigger using jquery api
 	// ---------------------------------------------
 	// hint: trigger.on(...)
 	// see: http://api.jquery.com/on/
-	// [...] INSERT HERE
+	$().on()
 		// add class 'animate' to target image: must be called on mouse over
 		target.addClass("animate");
 	// [...] INSERT HERE
