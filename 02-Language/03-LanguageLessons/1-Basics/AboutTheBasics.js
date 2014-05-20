@@ -1,14 +1,14 @@
 lesson("About Expectations", function() {
 
     learn("how to satisfy expectations", function() {
-        var expectedTrue = FILL_ME_IN;
-        var expectedFalse = FILL_ME_IN;
+        var expectedTrue = true;
+        var expectedFalse = false;
         expect(expectedTrue).toBeTruthy();
         expect(expectedFalse).toBeFalsy();
     });
 
     learn("how to expect equality", function () {
-        var expectedValue = FILL_ME_IN;
+        var expectedValue = 2;
         var actualValue = 1 + 1;
 
         expect(actualValue === expectedValue).toBeTruthy();
@@ -27,7 +27,7 @@ lesson("About Operators", function() {
             result = result + i;
         }
         result += 100;
-        expect(result).toBe(FILL_ME_IN);
+        expect(result).toBe(115);
     });
 
     learn("how to subtract", function() {
@@ -36,18 +36,18 @@ lesson("About Operators", function() {
             result = result - i;
         }
         result -= 100;
-        expect(result).toBe(FILL_ME_IN);
+        expect(result).toBe(-98);
     });
 
     learn("how to perform modulo", function() {
         var result = 10;
         var x = 3;
         result = result % x;
-        expect(result).toBe(FILL_ME_IN);
+        expect(result).toBe(1);
     });
 
     learn("about string concatenation", function(){
-        var s = "3" + FILL_ME_IN;
+        var s = "3" + "7";
         expect(s).toBe("37");
     });
 });
@@ -56,19 +56,19 @@ lesson("About Equality", function() {
 
     learn("about string literal equality", function(){
         var e = "World";
-        var s = 'FILL_ME_IN';
+        var s = 'World';
         expect(s).toBe(e); //quote types do not matter
     });
 
     learn("about equality without type coercion", function(){
         var e = 3;
-        var s = FILL_ME_IN;
+        var s = e;
         expect(e === s).toBeTruthy();
     });
 
     learn("about equality with type coercion", function(){
         var e = 3;
-        var s = 'FILL_ME_IN'; // use a string!
+        var s = '3'; // use a string!
         expect(e == s).toBeTruthy();
     });
 });
@@ -77,30 +77,30 @@ lesson("About Truthyness", function() {
 
     learn("about truthyness of positive numbers", function(){
         var isTruthy = 42 ? true : false;
-        expect(isTruthy).toBe(FILL_ME_IN);
+        expect(isTruthy).toBe(true);
     });
 
     learn("about truthyness of negative numbers", function(){
         var isTruthy = -42 ? true : false;
-        expect(isTruthy).toBe(FILL_ME_IN);
+        expect(isTruthy).toBe(true);
     });
 
     learn("about truthyness of zero", function(){
         var isTruthy = 0 ? true : false;
-        expect(isTruthy).toBe(FILL_ME_IN);
+        expect(isTruthy).toBe(false);
     });
 
     learn("about truthyness of null", function(){
         var isTruthy = null ? true : false;
-        expect(isTruthy).toBe(FILL_ME_IN);
+        expect(isTruthy).toBe(false);
     });
 });
 
 lesson ("About Variable Scope", function() {
 
     learn("the difference between local and global variables", function(){
-        var isLocal = FILL_ME_IN;
-        isGlobal = FILL_ME_IN;
+        var isLocal = 42;
+        isGlobal = 42;
 
         expect(isLocal).toBe(42);
         expect(window.isGlobal).toBe(42); //global variables are assigned to the window object
